@@ -17,6 +17,7 @@ Small Message Exchanger as an interview exercise
 ## 🚀 Local execution
 ### 1. Without Docker
 
+Optional as tests checking if server is up and if not - start the server.
 ```bash
 python server.py --port 8082
 ```
