@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  server:
+    build:
+      context: ./server
+    container_name: message-server
+    ports:
+      - "8080:8080"
+    command: ["python", "server.py", "--port", "8082"]
+
+  client:
+    build:
+      context: ./client
+    entrypoint: ["python", "client.py"]
